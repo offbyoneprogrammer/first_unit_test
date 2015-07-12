@@ -13,5 +13,19 @@ namespace WhenWillYouDieUnitTests
             int result = DieYearCalculator.CalculateDyingYear("");
             Assert.AreEqual(0, result);
         }
+
+        [TestMethod]
+        public void MartinStringTest()
+        {
+            int result = DieYearCalculator.CalculateDyingYear("Martin");
+            Assert.AreEqual(75, result);
+        }
+
+        [TestMethod]
+        public void OffByOneProgrammerStringTest()
+        {
+            int result = DieYearCalculator.CalculateDyingYear("OffByOneProgrammer");
+            Assert.AreEqual(12, result);
+        }
     }
 }

@@ -10,7 +10,12 @@ namespace WhenWillYouDie
     {
         public static int CalculateDyingYear(String name)
         {
-            return 0;
+            int result = 0;
+            foreach (char c in name.ToLower())
+            {
+                result += c - 'a' + 1;
+            }
+            return result % 100;
         }
     }
 }
