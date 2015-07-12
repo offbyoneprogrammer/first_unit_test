@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenWillYouDie", "WhenWillYouDie\WhenWillYouDie.csproj", "{97DA51CF-A669-4B62-9D52-7C85496DF54F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenWillYouDieUnitTests", "WhenWillYouDieUnitTests\WhenWillYouDieUnitTests.csproj", "{2CB9EB6F-BCC1-48B1-8F6A-739F9B871331}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{97DA51CF-A669-4B62-9D52-7C85496DF54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97DA51CF-A669-4B62-9D52-7C85496DF54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97DA51CF-A669-4B62-9D52-7C85496DF54F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB9EB6F-BCC1-48B1-8F6A-739F9B871331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB9EB6F-BCC1-48B1-8F6A-739F9B871331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB9EB6F-BCC1-48B1-8F6A-739F9B871331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB9EB6F-BCC1-48B1-8F6A-739F9B871331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
