@@ -27,33 +27,24 @@ namespace WhenWillYouDie
 
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
         {
-            String name = NameBox.Text;
-            String year = BirthYearBox.Text;
-            int birth_year = 0;
-            int years_to_live = 0;
             try
             {
-                birth_year = int.Parse(year);
-                years_to_live = DieYearCalculator.CalculateDyingYear(name);
+                int years_to_live = DieYearCalculator.CalculateDyingYear(NameBox.Text);
+                int birth_year = int.Parse(BirthYearBox.Text);
+                result.Text = (birth_year + years_to_live).ToString();
             }
             catch (FormatException)
             {
                 result.Text = "Please enter a valid year";
-                return;
             }
             catch (OverflowException)
             {
                 result.Text = "Please enter a valid year";
-                return;
             }
             catch (ArgumentException)
             {
                 result.Text = "Please enter a valid name";
-                return;
             }
-
-            result.Text = (birth_year + years_to_live).ToString();
-
         }
     }
 }
