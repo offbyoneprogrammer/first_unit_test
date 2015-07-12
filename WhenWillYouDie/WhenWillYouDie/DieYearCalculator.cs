@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WhenWillYouDie
 {
-    public static class DieYearCalculator
+    static class DieYearCalculator
     {
         public static int CalculateDyingYear(String name)
         {
