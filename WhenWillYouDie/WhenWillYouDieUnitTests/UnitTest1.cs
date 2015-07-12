@@ -27,5 +27,12 @@ namespace WhenWillYouDieUnitTests
             int result = DieYearCalculator.CalculateDyingYear("OffByOneProgrammer");
             Assert.AreEqual(12, result);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void NotANameTest()
+        {
+            int result = DieYearCalculator.CalculateDyingYear("0123");
+        }
     }
 }

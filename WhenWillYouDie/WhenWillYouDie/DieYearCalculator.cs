@@ -10,6 +10,9 @@ namespace WhenWillYouDie
     {
         public static int CalculateDyingYear(String name)
         {
+            if (name.Any(x => !char.IsLetter(x)))
+                throw new ArgumentException("name musst be a name");
+
             int result = 0;
             foreach (char c in name.ToLower())
             {
